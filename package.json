@@ -1,0 +1,63 @@
+{
+  "name": "material-ui-confirm-async",
+  "version": "1.0.0",
+  "description": "a simple confirmation dialog for react using material-ui based on material-ui-confirm library",
+  "keywords": [
+    "Material UI",
+    "confirmation",
+    "dialog"
+  ],
+  "author": "Zied Chekir",
+  "license": "MIT",
+  "repository": {
+    "type": "git"
+  },
+  "main": "dist/material-ui-confirm.cjs.js",
+  "module": "dist/material-ui-confirm.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "postversion": "git push && git push --tags",
+    "prepublishOnly": "npm run build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "format": "prettier --write **/*.{js,md,yml,json}"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.7",
+    "@babel/plugin-transform-runtime": "^7.23.7",
+    "@babel/preset-env": "^7.23.8",
+    "@babel/preset-react": "^7.23.3",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.6",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/addons": "^6.5.16",
+    "@storybook/react": "^6.5.16",
+    "@testing-library/react": "^13.4.0",
+    "babel-loader": "^8.3.0",
+    "coveralls": "^3.1.1",
+    "jest": "^27.5.1",
+    "prettier": "2.7.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^2.79.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-copy": "^3.5.0"
+  },
+  "peerDependencies": {
+    "@mui/material": ">= 5.0.0",
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "dependencies": {
+    "@mui/lab": "5.0.0-alpha.162"
+  }
+}
